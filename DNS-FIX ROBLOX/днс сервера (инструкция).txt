@@ -1,0 +1,18 @@
+для Windows:
+Предпочитаемый DNS : 192.168.1.50
+Альтернативный DNS : 9.9.9.9
+
+для Linux
+  Через nmcli (NetworkManager):
+     sudo nmcli con mod '<имя>' ipv4.dns "192.168.1.50 9.9.9.9"
+     sudo nmcli con up '<имя>'
+
+  Или вручную /etc/resolv.conf:
+     nameserver 192.168.1.50
+     nameserver 9.9.9.9
+
+для MacOS
+
+DNS-сервер 1 : 192.168.1.50
+DNS-сервер 2 : 9.9.9.9
+
